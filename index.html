@@ -5,9 +5,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>挺有意思的网站</title>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script>
+        opi=true
         function al(){
-            alert("未制作完成")
+            console.log("fading");
+            if(opi){
+                opi=!opi
+                $(".card1").fadeTo("1000",0.05)
+                $("#va").text("拒绝幼态审美！！！")
+            }else{
+                opi=!opi
+                $(".card1").fadeTo("1000",1)
+                $("#va").text("拒绝幼态审美！！！")
+            }
         }
     </script>
     <style>
@@ -16,17 +27,39 @@
             border-radius: 10px;
             text-align: center;
         }
+        .card2{
+            background-color: brown;
+        }
+        .card3{
+            background-color: yellow;
+        }
+        body{
+            background-image: url("https://i.328888.xyz/2023/02/06/rA3RC.png");
+            background-position: center;
+            background-size:cover;
+        }
     </style>
 </head>
 <body>
-    <h1 class="card1">一个小小的资源分享网站</h1>
+    <h1 class="card1">一个小小的资源分享网站<br>
+    <div class="card2">警告：在此网站所做的任何记录将<strong>不会</strong>被保留<br>在这里干什么都和作者没关系哦</div>
+    <div class="card3">网页正在施工，你所见到的不是最终版本</div></h1>
     <div class="card1">
-    <a class='card2' href="https://www.bilibili.com/video/BV1GJ411x7h7/">·回复术士的重启人生免费片源12集</a><br><br>
+    <a href="https://www.bilibili.com/video/BV1GJ411x7h7/">·回复术士的重启人生免费片源12集</a><br><br>
     <a href="./seewo.html">·希沃使用指南</a><br><br>
     <a href="./thinking.html">·获取免费电子书</a><br><br>
     <a href="car.html">b站必看</a>
 </div>
     <div class="card1"><p>Website powered by Github Pages</p>
-    <p>made by Lihaozhe</p></div>
+    <p>made by Lihaozhe</p>
+    <button id="va" onclick="al()">纯享背景（你是不是在拿纳西妲涩涩啊）</button>
+    <br>.
+</div>
+<div class="card1">
+<h3>Update log</h3>
+<p>Version 0.3 加上了背景</p>
+<p>Version 0.2 好看的页面(perhaps it is ugly)</p>
+<p>Version 0.1 创建网站并分配了域名</p>
+</div>
 </body>
 </html>
